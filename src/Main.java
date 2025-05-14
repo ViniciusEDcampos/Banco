@@ -6,7 +6,6 @@ public class Main {
     public static void main(String[] args) {
     ContaBancaria contaPedro = new ContaBancaria(13531,"Pedro Sampaio",2223.50);
     ContaBancaria contaMaria = new ContaBancaria(15892,"Maria Leopoldina", 5321);
-    Scanner scanner = new Scanner(System.in);
 
         System.out.println("Faça um Deposito na conta do banco");
         System.out.println("Conta 1: " + contaPedro.getTitular());
@@ -24,7 +23,7 @@ public class Main {
         System.out.println("Saldo Inicial: " + contaMaria.getSaldo());
         contaMaria.depositar(200);
         System.out.println("Saldo Atual: " + contaMaria.getSaldo());
-        ok = contaPedro.sacar(500.0);
+        ok = contaMaria.sacar(500.0);
         System.out.println("Tentativa de saque de R$700: " + (ok ? "sucesso" : "falha"));
         System.out.println("Saldo Atual: " + contaMaria.getSaldo());
     }

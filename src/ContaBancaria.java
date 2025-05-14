@@ -4,9 +4,6 @@ public class ContaBancaria {
     private String titular;
     private double saldo;
 
-    public ContaBancaria() {
-    }
-
     public ContaBancaria(int numeroConta, String titular, double saldo) {
         this.numeroConta = numeroConta;
         this.titular = titular;
@@ -38,10 +35,10 @@ public class ContaBancaria {
     }
 
     public boolean sacar(double valor){
-        if(this.saldo >= valor){
-            this.saldo -= valor;
+        if(saldo >= valor){
+            saldo -= valor;
             return true;
-        }else if(this.saldo < valor){
+        }else if(saldo < valor){
             return false;
         }
         return false;
